@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Ayyan Rajapkar</title>
+  <meta name="description" content="Software development and frontend projects by Ayyan Rajapkar, including Virtual ATM simulator, Warehouse packing optimization, and computer vision systems.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Ayyan Rajapkar">
+  <meta property="og:description" content="Explore projects built with Python, Flask, modern CSS, JavaScript, and algorithmic optimization.">
+  <meta property="og:image" content="assets/favicon.svg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="Ayyan Rajapkar Home">
+        <span class="brand-monogram">AR</span>
+        <div class="brand-text">
+          <span class="brand-name">Ayyan Rajapkar</span>
+          <span class="brand-role">CMPN A · 3rd Year</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Status Pill -->
+      <div class="status-pill" title="Currently seeking Summer 2026 frontend or software engineering internships">
+        <span class="status-dot"></span>
+        <span>Open to Internships</span>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-drawer-links">
+      <li>
+        <a href="index.html" class="mobile-drawer-link">
+          <span>Home</span>
+          <span class="badge badge-subtle">Overview</span>
+        </a>
+      </li>
+      <li>
+        <a href="projects.html" class="mobile-drawer-link active">
+          <span>Projects</span>
+          <span class="badge badge-accent">Current</span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="mobile-drawer-link">
+          <span>About</span>
+          <span class="badge badge-subtle">Background</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <div class="status-pill" style="align-self: flex-start;">
+        <span class="status-dot"></span>
+        <span>Open to Summer 2026 Internships</span>
+      </div>
+      <button class="btn btn-secondary" data-copy-email="ayyanrajapkar55@gmail.com" style="width: 100%;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span>Copy Email (ayyanrajapkar55@gmail.com)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main" class="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <section class="reveal" style="margin-bottom: 2.5rem;">
+        <div class="section-meta">
+          <span class="section-index">02 / Portfolio</span>
+          <span class="section-label">GitHub @ayyanrajapkar55-debug</span>
+        </div>
+        <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 2.8rem);">Engineering & Frontend Projects</h1>
+        <p class="section-desc" style="max-width: 680px; font-size: 1.05rem; margin-top: 0.5rem;">
+          A collection of projects exploring frontend architectures, algorithm optimizations, web simulation, and computer vision ergonomics. All code is maintained with structured version control.
+        </p>
+      </section>
+
+      <!-- Category Filter Bar -->
+      <div class="filter-bar reveal" role="tablist" aria-label="Filter Projects by Category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          <span>All Works</span>
+          <span class="filter-count">4</span>
+        </button>
+        <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">
+          <span>Frontend & Web</span>
+          <span class="filter-count">2</span>
+        </button>
+        <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">
+          <span>Python & Systems</span>
+          <span class="filter-count">2</span>
+        </button>
+        <button class="filter-btn" data-filter="algorithms" role="tab" aria-selected="false">
+          <span>Algorithms & AI</span>
+          <span class="filter-count">2</span>
+        </button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- 1. Virtual ATM System -->
+        <article class="card project-card reveal" id="atm" data-category="frontend backend">
+          <div class="project-visual">
+            <div class="illustration-atm">
+              <div class="atm-top-bar">
+                <div class="atm-chip"></div>
+                <div class="atm-status">
+                  <span class="status-dot" style="background:#38BDF8;box-shadow:0 0 8px #38BDF8;"></span>
+                  <span>SESSION ACTIVE</span>
+                </div>
+              </div>
+              <div class="atm-console">
+                <div class="atm-cmd">$ atm.transfer(target="acc_99", amt=2500)</div>
+                <div class="atm-digits">&gt; TRANSACTION_SUCCESS: 200 OK</div>
+              </div>
+              <div class="atm-bottom">
+                <span>SQLITE WAL</span>
+                <span>FLASK / JINJA</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <h2 class="project-title">
+                <a href="https://github.com/ayyanrajapkar55-debug/Virtual-ATM-system" target="_blank" rel="noopener noreferrer">Virtual ATM Simulator</a>
+              </h2>
+              <span class="project-meta-pill">Web & Systems</span>
+            </div>
+            <p class="project-description">
+              A full-stack banking simulator developed to explore transaction workflows, role-based access control, and state management. Includes an administrative interface for managing users and an ATM terminal UI for checking balances, depositing funds, and executing transfers.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">Session Auth</span>
+              <span class="tag">CRUD</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/ayyanrajapkar55-debug/Virtual-ATM-system" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+              <span class="badge badge-subtle">Coursework / Systems</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Warehouse Packing Optimization -->
+        <article class="card project-card reveal" id="warehouse" data-category="backend algorithms">
+          <div class="project-visual">
+            <div class="illustration-warehouse">
+              <div class="warehouse-grid">
+                <div class="grid-cell filled-1"></div>
+                <div class="grid-cell filled-1"></div>
+                <div class="grid-cell filled-2"></div>
+                <div class="grid-cell filled-2"></div>
+                <div class="grid-cell filled-3"></div>
+                <div class="grid-cell filled-3"></div>
+                <div class="grid-cell filled-1"></div>
+                <div class="grid-cell empty"></div>
+                <div class="grid-cell filled-2"></div>
+                <div class="grid-cell empty"></div>
+                <div class="grid-cell empty"></div>
+                <div class="grid-cell empty"></div>
+              </div>
+              <div class="warehouse-stats">
+                <div class="stat-item">
+                  <span>Capacity: 100%</span>
+                  <div class="stat-bar"><div class="stat-fill" style="width:100%;"></div></div>
+                </div>
+                <div class="stat-item">
+                  <span>0/1 Knapsack: DP</span>
+                  <div class="stat-bar"><div class="stat-fill" style="width:85%;background:#38BDF8;"></div></div>
+                </div>
+                <div class="stat-item">
+                  <span>Branch & Bound</span>
+                  <div class="stat-bar"><div class="stat-fill" style="width:95%;background:#F59E0B;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <h2 class="project-title">
+                <a href="https://github.com/ayyanrajapkar55-debug/Warehouse-packingOptimization" target="_blank" rel="noopener noreferrer">Warehouse Packing Optimization</a>
+              </h2>
+              <span class="project-meta-pill">Algorithms</span>
+            </div>
+            <p class="project-description">
+              A systematic algorithm implementation focused on maximizing stored goods value under weight and volumetric warehouse limits. Implemented and benchmarked 0/1 Knapsack (Dynamic Programming), Fractional Knapsack (Greedy), and Branch & Bound pruning algorithms to reduce handling time and optimize container space.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Optimization</span>
+              <span class="tag">0/1 Knapsack</span>
+              <span class="tag">Fractional Greedy</span>
+              <span class="tag">Branch & Bound</span>
+              <span class="tag">Python</span>
+              <span class="tag">Complexity Analysis</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/ayyanrajapkar55-debug/Warehouse-packingOptimization" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+              <span class="badge badge-subtle">Algorithm Research</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. AI Posture Correction -->
+        <article class="card project-card reveal" id="posture" data-category="algorithms">
+          <div class="project-visual">
+            <div class="illustration-posture">
+              <div class="posture-badge">TRACKING: NORMAL</div>
+              <div class="skeleton-view">
+                <div class="skeleton-joint joint-head"></div>
+                <div class="skeleton-joint joint-neck"></div>
+                <div class="skeleton-joint joint-lshoulder"></div>
+                <div class="skeleton-joint joint-rshoulder"></div>
+                <div class="skeleton-joint joint-spine"></div>
+                <div class="skeleton-joint joint-pelvis"></div>
+                <div class="skeleton-bone bone-spine"></div>
+                <div class="skeleton-bone bone-shoulders"></div>
+              </div>
+              <div class="posture-angle">Spine angle: 12.4&deg;</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <h2 class="project-title">
+                <span>AI Posture Correction</span>
+              </h2>
+              <span class="badge badge-subtle">In Development</span>
+            </div>
+            <p class="project-description">
+              A computer vision application that tracks human keypoints via webcam feed to evaluate sitting posture ergonomics. Computes neck and shoulder angle deviation from the vertical axis in real-time to alert users when slouching is detected.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Pose Estimation</span>
+              <span class="tag">Python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Ergonomics</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-action-link" style="color: var(--text-tertiary);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>Private Repository (WIP)</span>
+              </span>
+              <span class="badge badge-subtle">Undergraduate Project</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Developer Portfolio Site -->
+        <article class="card project-card reveal" id="portfolio" data-category="frontend">
+          <div class="project-visual">
+            <div class="illustration-code">
+              <div class="code-line"><span class="code-num">1</span><span><span class="code-kw">const</span> <span class="code-fn">developer</span> = {</span></div>
+              <div class="code-line"><span class="code-num">2</span><span>&nbsp;&nbsp;name: <span class="code-str">'Ayyan Rajapkar'</span>,</span></div>
+              <div class="code-line"><span class="code-num">3</span><span>&nbsp;&nbsp;focus: <span class="code-str">'Frontend &amp; UI Design'</span>,</span></div>
+              <div class="code-line"><span class="code-num">4</span><span>&nbsp;&nbsp;ci: <span class="code-str">'GitHub Actions Workflow'</span></span></div>
+              <div class="code-line"><span class="code-num">5</span><span>};</span></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <h2 class="project-title">
+                <a href="https://github.com/ayyanrajapkar55-debug/portfolio" target="_blank" rel="noopener noreferrer">Developer Portfolio &amp; CI/CD</a>
+              </h2>
+              <span class="project-meta-pill">Frontend</span>
+            </div>
+            <p class="project-description">
+              The personal portfolio website you are currently viewing. Built strictly with semantic HTML5, modern CSS custom properties, and vanilla JavaScript without heavy external framework overhead. Includes GitHub Actions workflow for automated testing and deployment.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Semantic HTML5</span>
+              <span class="tag">CSS Grid/Tokens</span>
+              <span class="tag">Vanilla JS</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">A11y &amp; WCAG</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/ayyanrajapkar55-debug/portfolio" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+              <span class="badge badge-accent">Live Site</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- GitHub Repositories Link -->
+      <section class="reveal" style="margin-top: 3.5rem; text-align: center;">
+        <div class="card" style="display: inline-block; max-width: 580px; text-align: left;">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="category-icon" style="width: 44px; height: 44px;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; color: var(--text-primary); font-size: 1rem;">Looking for all repositories &amp; commits?</div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.15rem;">
+                Explore raw repositories, scripts, and commit history directly on GitHub.
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem;">
+            <a href="https://github.com/ayyanrajapkar55-debug" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <span>github.com/ayyanrajapkar55-debug &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <span style="color: var(--text-secondary); font-weight: 600;">Ayyan Rajapkar</span>
+        <span style="margin: 0 0.5rem; color: var(--text-tertiary);">&middot;</span>
+        <span>Undergraduate Engineering Student (CMPN A)</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/ayyanrajapkar55-debug" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+        <li><a href="projects.html" class="footer-link">Projects</a></li>
+        <li><a href="about.html" class="footer-link">About</a></li>
+        <li><a href="mailto:ayyanrajapkar55@gmail.com" class="footer-link">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
